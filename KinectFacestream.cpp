@@ -7,6 +7,8 @@
 
 #include "KinectFaceStream.h"
 
+#ifdef KINECT_2
+
 using namespace MobileRGBD::Kinect2;
 
 KinectFaceStream::KinectFaceStream(KinectSensor& KinectSensorCaller) : KinectExtraRecorder(KinectSensorCaller)
@@ -242,3 +244,5 @@ void KinectFaceStream::Exchange(KinectBodies& CurrentBodies)
 		}
 	}
 }
+
+#endif // KINECT_2

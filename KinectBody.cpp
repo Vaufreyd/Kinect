@@ -7,6 +7,8 @@
 
 #include "KinectBody.h"
 
+#ifdef KINECT_2
+
 using namespace MobileRGBD::Kinect2;
 
 /* static */ int KinectBody::BodySize = 0;						/*!< @brief Size of all KinectBody buffer. To compute it, one can call Set with nullptr */
@@ -14,3 +16,5 @@ using namespace MobileRGBD::Kinect2;
 #if (defined WIN32 || defined WIN64) && defined KINECT_LIVE
 	ICoordinateMapper * KinectBody::CoordinateMapper = nullptr;	/*!< Coordinate Mapper. Exists only if KINECT_LIVE is defined. */
 #endif
+
+#endif // KINECT_2

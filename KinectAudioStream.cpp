@@ -7,6 +7,8 @@
 
 #include "KinectAudioStream.h"
 
+#ifdef KINECT_2
+
 using namespace MobileRGBD::Kinect2;
 
 /* virtual */ void FUNCTION_CALL_TYPE KinectAudioStream::Run()
@@ -119,3 +121,5 @@ using namespace MobileRGBD::Kinect2;
 		}
 	}
 }
+
+#endif // KINECT_2

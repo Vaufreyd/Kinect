@@ -7,6 +7,8 @@
 
 #include "KinectRGBStream.h"
 
+#ifdef KINECT_2
+
 using namespace MobileRGBD::Kinect2;
 
 /* virtual */ void FUNCTION_CALL_TYPE KinectRGBStream::Run()
@@ -118,3 +120,6 @@ using namespace MobileRGBD::Kinect2;
 	m_pKinectSensor->Close();
 	SafeRelease(m_pKinectSensor);
 }
+
+
+#endif // KINECT_2

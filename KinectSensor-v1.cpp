@@ -8,6 +8,7 @@
 #ifndef KINECT_2
 
 #include "KinectSensor-v1.h"
+#include "VideoKinectRecording.h"
 
 #ifdef DO_FADO_FACE_TRACKING
 	#include <FaceTrackLib.h>

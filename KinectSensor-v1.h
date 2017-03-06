@@ -13,6 +13,7 @@
 #include <System/Thread.h>
 
 #include "RecordingManagement.h"
+#include "VideoKinectRecording.h"
 
 #include <fstream>
 #include <iostream>
@@ -31,8 +32,6 @@ namespace MobileRGBD { namespace Kinect1 {
 	#include "../Drawing/DrawSkeleton.h"
 
 #endif // LIVE_RENDERING
-
-#include "KinectUser.h"
 
 
 class KinectSensorCommon

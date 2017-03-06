@@ -10,13 +10,16 @@
 
 #ifdef KINECT_1
 
-namespace MobileRGBD { namespace Kinect1 {
+#include <System/ConfigSystem.h>
 
 #ifndef OMISCID_ON_WINDOWS
+	typedef long int INT64;
 	typedef INT64 TIMESPAN;
 #else
 	typedef long long int TIMESPAN;
 #endif
+
+namespace MobileRGBD { namespace Kinect1 {
 
 static const int CamWidth = 640;
 static const int CamHeight = 480;
@@ -76,11 +79,9 @@ typedef unsigned char BOOLEAN;
 #define TRUE                1
 
 typedef int INT32;
-typedef long int INT64;
 typedef unsigned long int    UINT64;
 
 // From Kinect.h
-typedef INT64 TIMESPAN;
 typedef INT64 DWORD;
 
 #endif // OMISCID_ON_WINDOWS

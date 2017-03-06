@@ -16,10 +16,10 @@
 	#include <Drawing/DrawDepthView.h>
 #endif
 
-#endif
-
 using namespace MobileRGBD;
 using namespace MobileRGBD::Kinect2;
+
+#endif
 
 
 const char * KinectDraw::WindowNames[NumberOfItems] =
